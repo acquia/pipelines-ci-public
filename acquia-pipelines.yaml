@@ -9,6 +9,7 @@ events:
             - 'set +e'
             - 'echo "Testing encrypted variable"'
             - 'echo "DECRYPTABLE_VAR="${DECRYPTABLE_VAR?"Need to set DECRYPTABLE_VAR"}'
+            - 'echo "Successfully decrypted!"'
 variables:
   global:
     DECRYPTABLE_VAR:
