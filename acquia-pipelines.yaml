@@ -1,0 +1,16 @@
+version: 1.0.0
+events:
+  build:
+    steps:
+      -
+        behaviors:
+          type: script
+          script:
+            - 'set +e'
+            - 'echo "Testing encrypted variable"'
+            - 'echo "DECRYPTABLE_VAR="${DECRYPTABLE_VAR?"Need to set DECRYPTABLE_VAR"}'
+variables:
+  global:
+    DECRYPTABLE_VAR:
+      secure: 2acteM7ApxsP0IbxIdZZDLtUS26HAZfXH7qNvsJPtbtpyzaPdlRDnBHBPJj/T2lcoEelmcgoiTl+/lYGW8tEikxpMAJ2YrX5LBzYLudQUHgqn/rfgKXjYYceDEaqw+Z5FPIxQ7FHGubHy+tZh7SyWOqxgl7mm3VFGDOzQKaUCAfi4fcHCXdThFpLO5rlIOJawSHohkSWQdCkKrpNGp8l/DaKtrsqOFQoCJXlT/+T8n1GIVZoHpPqHAJ8gxjVi3/rBPLXuRGE+VWumOV8qMm+MSELq2csS+04NL9nI+I9/xJXlEDC4U8BSFogi15Nq0kNlAUp3t9PtOZtMmK5aiYcXIJLRw+oCspQSH81fdRZOx6S48f21Lnf7u/yYlNbwe3+Ijw0FzwmfdbIMmKiumIlR/qkz+z8f1BJcOoNGj9dxQPAXe4Tws/H902SSnybUMj++3TArtsY+48gCS143pgETEbXlgVfWIaxo2CELccNSyzCY0F6OE4KoHXjfLg9Qa5VCfjDbwGeqHTQv83Av8wdMgf3LoJj/DcPdoE+ghMFFlSnVFgFcUNg0RL0hNt6uKkYgdh+l3Kke33gnDHjwKrOOvbW0n2m7cBsAvhlTOO3UcrH5WnHghl0KS3k9KjMVQd9rGpSwVzjrq9UidBBKeDnlsDZbFKGocvNefVEEaLVL4tVJ0=vFqYu0H5Jhz31pDnDVwCdYu4+nBYJ+Pcn87dFBK3djVr/DCaFU/8nIFGNhwb8XzP/dJTC9HDJrTN3bsj8bDY038yFr2HFZ6hEh6yQ4OjQuKvBtWxSqnb+d73BuL2kQpC
+
